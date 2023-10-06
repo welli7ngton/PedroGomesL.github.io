@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-.navegador_superior_movel{
+.navegador_superior_movel {
     display: flex;
     background-color: #ccc;
     justify-content: left;
@@ -18,29 +18,35 @@
 }
 
 .submenu {
+    /**aqui eu configurei o sub menu mas coloquei o display none para esconder, e após isso colocar um ativador **/
     display: none;
     padding-top: 10px;
     list-style: none;
     background-color: #ccc;
 }
-.menu_principal_item:active .submenu{
+/** Aqui utilizei a condição do active que quando clicar no menu_principal_item irá aparecer o submenu, para isso só mudei o display para block **/
+.menu_principal_item:active .submenu {
     display: block;
 }
 
-.menu_principal_item, .sub_menu li{
+/** configuração do botão 3d, copiei e mudei apenas a propriedade do box-shadow**/
+.menu_principal_item,
+.sub_menu li {
     background-color: #ccc;
-            border: none;
-            padding: 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            box-shadow: 2px 2px 2px;
-            transition: transform 400ms, box-shadow 400ms;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px;
+    transition: transform 400ms, box-shadow 400ms;
 }
 
-.menu_principal:active, sub:active {
+.menu_principal:active,
+sub:active {
     box-shadow: 2px 3px 1px;
     transform: translate(4px, 6px);
 }
+
 .menu_esquerdo {
     display: flex;
     height: 1200px;
@@ -49,19 +55,26 @@
     flex-direction: column;
     justify-content: start;
 }
+
+/** aqui utilizei o flex e o flex direction para deixar ele um abaixo do outro**/
 .botoes {
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
 }
-.conteudo_menu{
+
+/** conteudo_menu é para que seja possivel colocar o menu lateral e o conteudo da pagina ao lado**/
+.conteudo_menu {
     display: flex;
 }
+
+/** na parte do conteudo coloquei o tamanho que a questão pediu e adicionei o text-alight para deixar o texto justificadp**/
 .conteudo {
     width: 80vw;
     height: 1200px;
     text-align: justify;
 }
+
+/**Aqui o codigo do load, tive que adicionar o display block, pois sem ele o circulo ficava abaixo do menu lateral **/
 .loader {
     display: block;
     width: 48px;
@@ -69,33 +82,51 @@
     border-radius: 50%;
     position: relative;
     animation: rotate 1s linear infinite
-  }
-  .loader::before , .loader::after {
+}
+
+.loader::before,
+.loader::after {
     content: "";
     box-sizing: border-box;
     position: absolute;
     inset: 0px;
     border-radius: 50%;
     border: 5px solid #FFF;
-    animation: prixClipFix 2s linear infinite ;
-  }
-  .loader::after{
-    transform: rotate3d(90, 90, 0, 180deg );
+    animation: prixClipFix 2s linear infinite;
+}
+
+.loader::after {
+    transform: rotate3d(90, 90, 0, 180deg);
     border-color: blue;
-  }
+}
 
-  @keyframes rotate {
-    0%   {transform: rotate(0deg)}
-    100%   {transform: rotate(360deg)}
-  }
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
 
-  @keyframes prixClipFix {
-      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
-      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
-      75%, 100%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-  }
+    100% {
+        transform: rotate(360deg)
+    }
+}
 
-  @media screen and (max-width:600px) {
+@keyframes prixClipFix {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    }
+
+    75%,
+    100% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    }
+}
+
+/** Define as regras de estilo para dispositivos com largura máxima de 600px, utilizando o max_width:600px, com essa mudança o site ficou quebrado e as outras mudanças foram para adaptar**/
+@media screen and (max-width:600px) {
     .menu_esquerdo {
         background-color: blue;
         display: flex;
@@ -103,10 +134,12 @@
         width: 100%;
         height: 50px;
     }
-    .botao{
+
+    .botao {
         list-style: none;
     }
-    .conteudo_menu{
+
+    .conteudo_menu {
         display: block;
     }
-  }
+}
