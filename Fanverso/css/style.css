@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+body {
+    /* background-color: aqua; */
+    height: 100vh;
+}
+
+.form-login-title {
+    font-family: 'Changa One', sans-serif;
+    font-size: 30px;
+}
+
+.placeholder-header {
+    display: block;
+    height: 7vh;
+    width: 100vw;
+    background-color: blueviolet;
+}
+
+.footer-placeholder {
+    width: 100vw;
+    height: 15vh;
+    background-color: #D9D9D9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 90vw;
+    height: 78vh;
+    /* background-color: palegreen; */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: brown; */
+    padding: 20px;
+}
+
+.form-login {
+    /* background-color: bisque; */
+    width: 70%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login-item {
+    padding: 5px 0;
+    margin: 20px 0;
+    height: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#email, #senha {
+    width: 300px;
+}
+
+#input-submit {
+    width: 275px;
+    height: 75px;
+    font-family: 'Changa One', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
