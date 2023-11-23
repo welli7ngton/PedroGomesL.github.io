@@ -7,7 +7,7 @@ body {
 
 .form-login-title {
     font-family: 'Changa One', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .placeholder-header {
@@ -54,6 +54,7 @@ body {
 }
 
 .form-login-item {
+    font-size: 20px;
     padding: 5px 0;
     margin: 20px 0;
     height: 50px;
@@ -63,14 +64,14 @@ body {
 }
 
 #email, #senha {
-    width: 300px;
+    width: 450px;
 }
 
 #input-submit {
-    width: 275px;
-    height: 75px;
+    width: 300px;
+    height: 100px;
     font-family: 'Changa One', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     background-color: black;
     border-radius: 5px;
