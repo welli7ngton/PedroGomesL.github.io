@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+#menu {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+}
+
+.title,
+.sub-title {
+    list-style: none;
+    display: none;
+    animation-name: aparecer;
+    animation-duration: 500ms;
+}
+
+#menu-header .itens-menu.active .sub-title {
+    display: block;
+    background-color: rgb(186, 186, 255);
+    font-family: 'roboto', sans-serif;
+    padding-left: 5px;
+}
+
+#menu-header .itens-menu.active .cate {
+    display: block;
+    background-color: rgb(186, 186, 255);
+    font-family: 'Changa One', sans-serif;
+    padding-top: 5px;
+}
+
+.itens-menu {
+    margin: -50px;
+    margin-top: 20px;
+    width: 180px;
+}
+
+@keyframes aparecer {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 20px;
+    }
+}
+
+#categorias,
+#universos {
+    list-style: none;
+    font-family: 'Changa One', sans-serif;
+    font-size: 2vh;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icon {
+    display: flex;
+    padding-right: 20px;
+    height: 60px;
+    align-items: center;
+}
+
+.placeholder-header {
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+}
+
+#logo {
+    margin-left: 1%;
+}
+
+.search {
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(120, 120, 233);
+    justify-content: space-between;
+    margin-right: 15vh;
+    width: 400px;
+    height: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.644);
+}
+
+.search p {
+    margin-left: 5%;
+    font-family: 'Changa One', sans-serif;
+    font-size: 2vh;
+    opacity: 0.5;
+}
+
+.search img {
+    width: 3vh;
+    opacity: 0.5;
+}
+
