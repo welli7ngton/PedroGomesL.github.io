@@ -72,7 +72,7 @@ body {
 
 .login-logos a {
     border: 5px solid red;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 #email, #senha {
