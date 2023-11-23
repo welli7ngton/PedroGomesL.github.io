@@ -37,8 +37,8 @@ body {
 .form-container {
     display: flex;
     justify-content: center;
+    margin: 100px;
     /* background-color: brown; */
-    padding: 20px;
 }
 
 .form-login {
@@ -60,6 +60,18 @@ body {
     height: 50px;
     display: block;
     text-align: center;
+    border-radius: 5px;
+}
+
+.login-logos {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 200px;
+}
+
+.login-logos a {
+    border: 5px solid red;
     border-radius: 5px;
 }
 
