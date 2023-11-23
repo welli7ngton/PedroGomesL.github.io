@@ -6,7 +6,8 @@
     display: flex;
 }
 
-.title, .sub-title {
+.title,
+.sub-title {
     list-style: none;
     display: none;
     animation-name: aparecer;
@@ -15,14 +16,36 @@
 
 #menu-header .itens-menu.active .sub-title {
     display: block;
-    background-color: blue;
-}
-@keyframes aparecer {
-    from{height: 0px;}
-    to {height: 50px;}
+    background-color: rgb(186, 186, 255);
+    font-family: 'roboto', sans-serif;
+    padding-left: 5px;
 }
 
-#categorias, #universos {
+#menu-header .itens-menu.active .cate {
+    display: block;
+    background-color: rgb(186, 186, 255);
+    font-family: 'Changa One', sans-serif;
+    padding-top: 5px;
+}
+
+.itens-menu {
+    margin: -50px;
+    margin-top: 20px;
+    width: 180px;
+}
+
+@keyframes aparecer {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 20px;
+    }
+}
+
+#categorias,
+#universos {
     list-style: none;
     font-family: 'Changa One', sans-serif;
     font-size: 2vh;
@@ -43,7 +66,8 @@
     height: 6vh;
     background-color: #f2f2f2;
     padding: 0 20px;
-    box-sizing: border-box; /* Adicionado para incluir a borda e o padding no tamanho total */
+    box-sizing: border-box;
+
 }
 
 #logo {
@@ -67,7 +91,9 @@
     font-size: 2vh;
     opacity: 0.5;
 }
+
 .search img {
     width: 3vh;
     opacity: 0.5;
 }
+
