@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
-
-body {
-    /* background-color: aqua; */
-    height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100&display=swap');
 
 .form-login-title {
     font-family: 'Changa One', sans-serif;
@@ -11,27 +7,39 @@ body {
 }
 
 .placeholder-header {
-    display: block;
     height: 7vh;
+    max-height: 7vh;
     width: 100vw;
     background-color: blueviolet;
 }
 
-.footer-placeholder {
-    width: 100vw;
+.placeholder-footer {
     height: 15vh;
-    background-color: #D9D9D9;
+    max-height: 15vh;
+    width: 100vw;
+    background-color:blueviolet;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    width: 100%;
+    background-image: url("/Fanverso/img/BACKGROUND/colorido.svg");
+    position: relative;
+    background-repeat: repeat;
+    height: 78vh;
 }
 
 .content {
-    width: 90vw;
-    height: 78vh;
-    /* background-color: palegreen; */
+    width: 35vw;
+    min-width: 500px;
+    height: 60vh;
+    /* min-height: 600px; */
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid black;
+    
 }
 
 .form-container {
@@ -43,7 +51,6 @@ body {
 
 .form-login {
     /* background-color: bisque; */
-    width: 70%;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -57,10 +64,10 @@ body {
     font-size: 20px;
     padding: 5px 0;
     margin: 20px 0;
-    height: 50px;
     display: block;
     text-align: center;
     border-radius: 5px;
+    font-family: 'Roboto' sans-serif;
 }
 
 .login-logos {
@@ -68,15 +75,21 @@ body {
     justify-content: space-between;
     height: 100px;
     width: 200px;
+    margin-top: 30px;
 }
 
 .login-logos a {
-    border: 5px solid red;
     border-radius: 50%;
+    border: solid 1px white;
 }
 
+.login-logos a:hover {
+    box-shadow: 5px 10px 15px #888888;
+}
+
+/* fazer media querry para alterar espaço pra digitar */
 #email, #senha {
-    width: 450px;
+    width: 400px;
 }
 
 #input-submit {
@@ -85,6 +98,18 @@ body {
     font-family: 'Changa One', sans-serif;
     font-size: 30px;
     color: white;
-    background-color: black;
+    background-color: rgb(59, 59, 59);
+    border-style: 1px solid rgb(59, 59, 59);
     border-radius: 5px;
+}
+
+#input-submit:hover {
+    box-shadow: 5px 10px 15px #888888;
+    background-color: black;
+    border-style: 1px solid black;
+}
+
+#input-submit:active{
+    box-shadow: none;
+    background-color: rgb(59, 59, 59);
 }
