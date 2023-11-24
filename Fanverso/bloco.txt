@@ -13,3 +13,5 @@ Deve usar o AXIOS para a leitura de dados
 O site todo deve ter no mínimo 5 páginas diferentes
 
 OBS (PADRÃO DE PROPORÇÃO DE TELA É 80 PARA TODO CONTEUDO DA PAGINA, APENAS HEADER 100 PORCENTO)
+
+lupa de pesquisa, adicionar uma border
