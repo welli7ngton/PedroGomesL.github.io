@@ -6,19 +6,12 @@
     font-size: 50px;
 }
 
-.placeholder-header {
-    height: 7vh;
-    max-height: 7vh;
-    width: 100vw;
-    background-color: blueviolet;
-}
-
-.placeholder-footer {
+/* .placeholder-footer {
     height: 15vh;
     max-height: 15vh;
     width: 100vw;
     background-color:blueviolet;
-}
+} */
 
 .container {
     display: flex;
@@ -67,7 +60,8 @@
     display: block;
     text-align: center;
     border-radius: 5px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .login-logos {
@@ -92,14 +86,26 @@
     width: 400px;
 }
 
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 #input-submit {
     width: 300px;
     height: 100px;
     font-family: 'Changa One', sans-serif;
     font-size: 30px;
     color: white;
-    background-color: rgb(59, 59, 59);
-    border-style: 1px solid rgb(59, 59, 59);
+    background-color: rgb(39, 39, 39);
+    border-style: 1px solid rgb(39, 39, 39);
     border-radius: 5px;
 }
 
@@ -112,4 +118,31 @@
 #input-submit:active{
     box-shadow: none;
     background-color: rgb(59, 59, 59);
+}
+
+.links {
+    margin: 20px;
+    display: flex;
+}
+
+.links p {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.links a:visited {
+    color: rgb(128, 121, 121);
+}
+
+.links a:link {
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: rgb(0, 0, 0);
 }
