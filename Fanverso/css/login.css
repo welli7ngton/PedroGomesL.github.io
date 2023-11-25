@@ -13,19 +13,26 @@
     background-image: url("/Fanverso/img/BACKGROUND/colorido.svg");
     position: relative;
     background-repeat: repeat;
-    height: 83vh;
+    height: 78vh;
 }
+
+main {
+    padding-bottom: 15%;
+    background-image: url("/Fanverso/img/BACKGROUND/colorido.svg");
+    background-repeat: repeat;
+}
+
 
 .content {
     width: 35vw;
     min-width: 500px;
     height: 60vh;
-    /* min-height: 600px; */
+    min-height: 540px;
     margin: auto;
     background-color: white;
     border-radius: 10px;
     border: 5px solid black;
-    
+    margin-top: 80px;
 }
 
 .form-container {
