@@ -1,6 +1,7 @@
 footer {
     height: 15vh;
     width: 100%;
+    position: absolute;
 }
 
 
@@ -10,8 +11,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-    width: 100vw;
-    position: fixed;
+   
 }
 
 #logo-copyright {
