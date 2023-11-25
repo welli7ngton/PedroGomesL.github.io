@@ -77,7 +77,7 @@
                             <input type="text" class="form-login-item" id="last-name" placeholder="Sobrenome">
                         </div>
                         <div id="personal-info">
-                            <input type="number" class="form-login-item" id="cell-phone" placeholder="Número"
+                            <input type="tel" pattern="\d{2} \d \d{4}-\d{4}" class="form-login-item" id="cell-phone" placeholder="Telefone"
                                 maxlength="9">
                             <input type="date" class="form-login-item" id="birth" placeholder="Sobrenome">
                         </div>
@@ -85,8 +85,7 @@
                         <div class="password-container">
                             <input type="password" class="form-login-item" id="senha" placeholder="Senha"
                                 maxlength="25">
-                            <span></span>
-                            <span class="toggle-password" onclick="togglePassword()"> </span>
+                            <span class="toggle-password" onclick="togglePassword()"><img src="/Fanverso/img/GERAIS/olho-aberto.png" alt="olho"></span>
                         </div>
                         <input type="button" value="Enviar" class="form-login-item" id="input-submit"
                             onclick="validarEmail();validarSenha()">
@@ -97,8 +96,11 @@
                             <a href="#"><img src="/Fanverso/img/LOGIN/icons8-facebook.svg" alt="facebook logo svg"></a>
                         </div>
                         <div class="links">
-                            <a href="">
+                            <a href="#">
                                 <p>ESQUECEU SUA SENHA?</p>
+                            </a>
+                            <a href="/Fanverso/html/login.html">
+                                <p>JÁ TEM UMA CONTA?</p>
                             </a>
                         </div>
                     </form>
