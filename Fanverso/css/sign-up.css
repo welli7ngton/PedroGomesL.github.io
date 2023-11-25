@@ -158,3 +158,15 @@ main {
 .links a:hover {
     color: rgb(0, 0, 0);
 }
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
